@@ -1,0 +1,47 @@
+# LISTAR TODOS LOS DESTINOS DISPONIBLES
+# GET http://localhost:3000/destinations
+
+
+
+# LISTAR UN DESTINO POR ID
+# GET http://localhost:3000/destinations/2
+
+
+
+# CREAR INFO DE UN DESTINO
+# POST http://localhost:3000/destinations HTTP/1.1
+# content-type: application/json
+
+# {
+#     "name":"Cancun",
+#     "weather":"33 °C",
+#     "description":"Cancún es una ciudad de México ubicada en la península de Yucatán que limita con el mar Caribe y que es conocida por sus playas, los numerosos centros turísticos y la vida nocturna. Se compone de 2 áreas distintas: el área del centro más tradicional y la Zona Hotelera, la franja costera con hoteles altos, clubes nocturnos, tiendas y restaurantes. Cancún también es un destino popular entre estudiantes durante el período de vacaciones universitarias en la primavera.",
+#     "timezone":"GMT-5 (22:46)",
+#     "landingtime":"2019-05-19T18:30:00+00:00",
+#     "boardingtime":"2019-05-19T10:15:00+00:00"
+# }
+
+
+
+# POST http://localhost:3000/destinations HTTP/1.1
+# content-type: application/json
+
+    # {
+    #     "name":"Miami",
+    #     "weather":"26 °C",
+    #     "description":"Miami es una ciudad internacional en el extremo sureste de Florida. La influencia cubana se refleja en los cafés y las tabaquerías de la Calle Ocho en la Pequeña Habana. En las islas de barrera, al otro lado de las aguas turquesa de Bahía Vizcaína, se encuentra Miami Beach, en la cual se ubica South Beach. Este glamoroso barrio es famoso por sus coloridos edificios art déco, la arena blanca, los hoteles junto al mar y los clubes vanguardistas.",
+    #     "timezone":"GMT-4 (23:04)",
+    #     "landingtime":"2019-05-19T23:30:00+00:00",
+    #     "boardingtime":"2019-05-19T23:15:00+00:00"
+    # }
+
+# ACTUALIZAR UN DESTINO
+# PUT http://localhost:3000/destinations/2 HTTP/1.1
+# content-type: application/json
+
+# {
+#     "name":"Miami"
+# }
+
+# ELIMINAR UN DESTINO
+# DELETE http://localhost:3000/destinations/1 HTTP/1.1

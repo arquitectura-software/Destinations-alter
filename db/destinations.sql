@@ -1,0 +1,25 @@
+CREATE DATABASE destinations;
+
+USE destinations;
+DROP TABLE IF EXISTS `Destinations`;
+
+CREATE TABLE
+IF NOT EXISTS `Destinations`
+(
+`id_dest` INT
+(10) unsigned NOT NULL AUTO_INCREMENT,
+`name` VARCHAR
+(50) COLLATE utf8_unicode_ci NOT NULL,
+`description` TEXT NOT NULL,
+`timezone` VARCHAR
+(50)  COLLATE utf8_unicode_ci NOT NULL,
+`landingtime` DATETIME NOT NULL,
+`boardingtime` DATETIME NOT NULL,
+`created_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+`updated_at` TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON
+UPDATE CURRENT_TIMESTAMP,
+PRIMARY KEY
+(`id_dest`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+DESCRIBE Destinations;
